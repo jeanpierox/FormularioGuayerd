@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Agregue el siguiente elemento <FORM> a su página.                 -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+    <input type=hidden name="oid" value="00DDp000001ybm5">
+    <input type=hidden name="retURL" value="https://winguweb.org/">
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTA: Estos campos son elementos de depuración opcionales. Elimine      -->
+    <!--  los comentarios de estas líneas si desea realizar una prueba en el      -->
+    <!--  modo de depuración.                                                     -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="jeanpierox@hotmail.com">                                         -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    <label for="first_name">Nombre</label>
+    <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+    
+    <label for="last_name">Apellidos</label>
+    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+    
+    <label for="email">Correo electrónico</label>
+    <input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    
+    Pais de la donacion:<select  id="00NDp000009cE8i" name="00NDp000009cE8i" title="Pais de la donacion">
+    <option value="">--Ninguno--</option>
+    <option value="CL">CL</option>
+    <option value="CO">CO</option>
+    <option value="MX">MX</option>
+    <option value="AR">AR</option>
+    </select><br>
+    
+    Trabajo en una organización social:<select  id="00NDp000009cE7Q" name="00NDp000009cE7Q" title="Trabajo en una organización social">
+    <option value="">--Ninguno--</option>
+    <option value="Si">Si</option>
+    <option value="No">No</option>
+    </select><br>
+    
+    Organización o institución:<input  id="00NDp000009cE7k" maxlength="40" name="00NDp000009cE7k" size="20" type="text" /><br>
+    
+    Tipo de donación:<select  id="00NDp000009cE8Y" name="00NDp000009cE8Y" title="Tipo de donación">
+    <option value="">--Ninguno--</option>
+    <option value="Dinero">Dinero</option>
+    <option value="Ropa">Ropa</option>
+    <option value="Juguetes">Juguetes</option>
+    <option value="Alimentos">Alimentos</option>
+    </select><br>
+    
+    Tipo de moneda:<select  id="00NDp000009cE8T" name="00NDp000009cE8T" title="Tipo de moneda">
+    <option value="">--Ninguno--</option>
+    <option value="ARS - Pesos Argentinos">ARS - Pesos Argentinos</option>
+    <option value="USD - Dólar de EE.UU.">USD - Dólar de EE.UU.</option>
+    </select><br>
+    
+    Método de pago DO:<select  id="00NDp000009cE71" name="00NDp000009cE71" title="Método de pago DO">
+    <option value="">--Ninguno--</option>
+    <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+    <option value="Cheque">Cheque</option>
+    <option value="Tarjeta de débito">Tarjeta de débito</option>
+    <option value="Transferencia electrónica de fondos">Transferencia electrónica de fondos</option>
+    <option value="Otro">Otro</option>
+    </select><br>
+    
+    Tipo de tarjeta DO:<select  id="00NDp000009cE76" name="00NDp000009cE76" title="Tipo de tarjeta DO">
+    <option value="">--Ninguno--</option>
+    <option value="American express">American express</option>
+    <option value="Visa débito">Visa débito</option>
+    <option value="Mastercard debito">Mastercard debito</option>
+    <option value="Mastercard">Mastercard</option>
+    <option value="Visa">Visa</option>
+    <option value="Tarjeta Mercado Pago">Tarjeta Mercado Pago</option>
+    </select><br>
+    
+    <label for="description">Descripción</label>
+    <textarea name="description"></textarea><br>
+    
+    <input type="submit" name="submit">
+    
+    </form>
+    
+</body>
+</html>

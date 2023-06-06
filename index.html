@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Donacion</title>
+    <link rel="shortcut icon" href="salesforce.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <input type=hidden name="oid" value="00DDp000001ybm5">
+        <input type=hidden name="retURL" value="https://winguweb.org/">
+
+        <img src="Banner.jpg" alt="" class="form__logo">
+        <h2 class="form__title">Formulario de Donación</h2>
+        <div class="form__container">
+            <div class="form__group">
+                <input id="first_name" maxlength="40" name="first_name" size="20" type="text" class="form__input" placeholder=" ">
+                <label for="first_name" class="form__label">Nombre(s)</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input id="last_name" maxlength="80" name="last_name" size="20" type="text" class="form__input" placeholder=" ">
+                <label for="last_name" class="form__label">Apellido(s)</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input id="email" maxlength="80" name="email" size="20" type="email" class="form__input" placeholder=" ">
+                <label for="email" class="form__label">Email</label>
+                <span class="form__line"></span>
+            </div>
+            <!-- <div class="form__group">
+                <input id="phone" maxlength="40" name="phone" size="20" type="tel" class="form__input" placeholder=" ">
+                <label for="phone" class="form__label">Telefono</label>
+                <span class="form__line"></span>
+            </div> -->
+            <div class="form__group">
+                <h6>Pais de la donacion: </h6>
+                <select class="form__select" id="00NDp000009cE8i" name="00NDp000009cE8i" title="Pais de la donacion">
+                    <option selected disabled>----</option>
+                    <option value="CL">CL</option>
+                    <option value="CO">CO</option>
+                    <option value="MX">MX</option>
+                    <option value="AR">AR</option>
+                </select>
+            </div>
+            <div class="form__group">
+                <h6>Trabajo en una organización social: </h6> 
+                <select class="form__select" id="00NDp000009cE7Q" name="00NDp000009cE7Q" title="Trabajo en una organización social">
+                    <option selected disabled>----</option>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form__group">
+                <input id="00NDp000009cE7k" maxlength="40" name="00NDp000009cE7k" size="20" type="text" class="form__input" placeholder=" ">
+                <label for="00NDp000009cE7k" class="form__label">Organización o institución</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <h6>Tipo de donación: </h6> 
+                <select class="form__select" id="00NDp000009cE8Y" name="00NDp000009cE8Y" title="Tipo de donación">
+                    <option selected disabled>Ninguno</option>
+                    <option value="Dinero">Dinero</option>
+                    <option value="Ropa">Ropa</option>
+                    <option value="Juguetes">Juguetes</option>
+                    <option value="Alimentos">Alimentos</option>
+                </select>
+            </div>
+            <div class="form__group">
+                <h6>Tipo de moneda: </h6> 
+                <select class="form__select" id="00NDp000009cE8T" name="00NDp000009cE8T" title="Tipo de moneda">
+                    <option selected disabled>Ninguna</option>
+                    <option value="ARS - Pesos Argentinos">ARS - Pesos Argentinos</option>
+                    <option value="USD - Dólar de EE.UU.">USD - Dólar de EE.UU.</option>
+                </select>
+            </div>
+            <div class="form__group">
+                <h6>Método de pago DO: </h6> 
+                <select class="form__select" id="00NDp000009cE71" name="00NDp000009cE71" title="Método de pago DO">
+                    <option selected disabled>Ninguno</option>
+                    <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                    <option value="Cheque">Cheque</option>
+                    <option value="Tarjeta de débito">Tarjeta de débito</option>
+                    <option value="Transferencia electrónica de fondos">Transferencia electrónica de fondos</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="form__group">
+                <h6>Tipo de tarjeta DO: </h6> 
+                <select class="form__select" id="00NDp000009cE76" name="00NDp000009cE76" title="Tipo de tarjeta DO">
+                    <option selected disabled>Ninguna</option>
+                    <option value="American express">American express</option>
+                    <option value="Visa débito">Visa débito</option>
+                    <option value="Mastercard debito">Mastercard debito</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Tarjeta Mercado Pago">Tarjeta Mercado Pago</option>
+                </select>
+            </div>
+            <div class="form__group">
+                <textarea name="description" id="description" maxlength="80" name="last_name" size="20" type="text" class="form__input" placeholder=" "></textarea>
+                <label for="description" class="form__label">Descripción</label>
+                <span class="form__line"></span>
+            </div>
+
+            <input type="submit" name="submit" class="form__submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
